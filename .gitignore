@@ -1,3 +1,5 @@
-ecommerce/settings.py
-ecommerce/credentials.cnf
+credentials.cnf
 ecommerce/venv/
+*.pyc
+ecommerce/settings.py
+*.pyc
