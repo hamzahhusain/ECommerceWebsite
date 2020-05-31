@@ -25,7 +25,10 @@ SECRET_KEY = 'bm*u_7e*@*f#fq-2uif1n7g$xk1l0)9!+)h(kw)qp!mb^*ci2*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '192.168.1.216',
+    'localhost'
+]
 
 
 # Application definition
@@ -133,7 +136,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
+CRISPY_TEMPLATE_PACK='bootstrap4'
+
 STATIC_URL = '/static/'
 
 MEDIA_ROOT=os.path.join(BASE_DIR,'media')
 MEDIA_URL='/media/'
+
+LOGIN_REDIRECT_URL = 'shop-home'
+LOGIN_URL = 'login'
